@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Primer Parcial</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <LINK href="estilo.css" rel="stylesheet" type="text/css">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  
+</head>
+  <body>
+    <header class="estilo_bloque">
+        <img class="img" src="foto_perfil.jpg">
+        <p> Edgar Joel Pocón Zamora</p>
+        <nav>  
+                <a href="">Inicio</a> |
+                <a href="">Php</a> |
+                <a href="">.Net</a> |
+                <a href="">Java</a> 
+        </nav>
+    </header>
+            <div class="estilo_bloque" type="1" start="1"> 
+            <h1>Lenguajes de Programacion</h1>
+            <li>Paginas Web</li>
+            <ul type="circle"> 
+                <li>Java</li>
+                <li>Php</li>
+                <li>C#</li>
+            </ul>
+            <li>Aplicaciones</li>
+            <ul type="circle"> 
+                <li>Java</li>
+                <li>Visual Basic</li>
+                <li>C#</li>
+            </ul>
+            </div>
+   
+        <div class="estilo_bloque">
+            <table>
+                <tr><td colspan="2">Programacion Web</td></tr>
+                <tr><td>Asp</td><td>Jsp</td></tr>
+                <tr><td>Php</td><td>Ruby</td></tr>
+                <tr><td>Python</td><td>Go</td></tr>     
+                
+            </table>
+        </div>
+        <div class="estilo_bloque">
+            <form onsubmit="return f_mensaje()">
+                <input type="text" id="txtnombre" name="txtnombre" placeholder="Ingrese Nombres" required>
+                <input type="text" id="txtapellido" name="txtapellidos" placeholder="Ingrese Apellidos" required>
+                <input type="number" id="txtnumero" name="txttelefono" placeholder="Ingrese Numero Telefonico" required>
+                <input type="email" id="txtcorreo" name="txtcorreo" placeholder="Ingrese Correo Electronico" required>
+                <input type="date" id="txtfecha" name="txtfn" placeholder="Ingrese Fecha Nacimiento" required>
+                <textarea name="txtmensaje" id="mensaje" placeholder="Ingrese el Mensaje"></textarea>
+                <input type="submit" class="boton" onclick="formalert()">
+
+                <script type="text/javascript">
+                    function formalert(){ 
+                        var nombre = document.getElementById("txtnombre").value;
+                        var apellido = document.getElementById("txtapellido").value;
+                        var telefono= document.getElementById("txtnumero").value;
+                        var correo= document.getElementById("txtcorreo").value;
+                        var fecha= document.getElementById("txtfecha").value;
+                        var mensaje=document.getElementById("mensaje").value;
+                        alert(nombre + "\r\n" + apellido + "\r\n" +telefono+"\r\n"+correo + "\r\n" + fecha + "\r\n" +mensaje) ;
+                    }
+                    </script>
+            </form>
+        </div>
+        <div class="estilo_bloque" id="redes_sociales" >
+            <h3>Redes Sociales</h3>
+            <a href="#"><img src="facebook.png"></a>
+            <a href="#"><img src="twitter.png"></a>
+           </div>
+  </body>
+  <footer> 
+    <p  align=center>Aprende a Programar
+        Fácil y Rápido &copy;</p>
+  </footer>
+
+</html>
